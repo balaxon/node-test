@@ -1,0 +1,258 @@
+body {
+  margin: 0 auto;
+  max-width: 1600px;
+  min-width: 500px;
+}
+
+header {
+  background: black;
+  border-bottom: 5px solid white;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+}
+
+main {
+  background: black;
+  padding-bottom: 70px;
+  color: white;
+}
+
+#winners__block {
+  background: black;
+  padding-bottom: 70px;
+  color: white;
+  text-align: center;
+}
+
+#winners__text {
+  margin: 0;
+  padding-top: 30px;
+}
+
+#sort__list {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+#winners__list {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  align-items: flex-end;
+}
+
+.svg__wins {
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.svg__car {
+  width: 50px;
+  height: 50px;
+  background-color: #69001F;
+  fill: #fff;
+}
+
+svg {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  margin-left: 120px;
+}
+
+.track {
+  height: 56px;
+  border-bottom: 5px dashed white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#start__stop {
+  width: 120px;
+}
+
+#start__stop > button {
+  margin: 15px;
+}
+
+#button__update:disabled {
+  cursor: default;
+  background: #69001F;
+  transform: none;
+}
+
+.button__start:disabled {
+  cursor: default;
+  background: #69001F;
+  transform: none;
+}
+
+.button__stop:disabled {
+  cursor: default;
+  background: #69001F;
+  transform: none;
+}
+
+#button__winners:disabled {
+  cursor: default;
+  background: #69001F;
+  transform: none;
+}
+
+#button__name:disabled {
+  cursor: default;
+  background: #69001F;
+  transform: none;
+}
+
+#button__car:disabled {
+  cursor: default;
+  background: #69001F;
+  transform: none;
+}
+
+button:disabled {
+  cursor: default;
+  background: #69001F;
+  transform: none;
+}
+
+#race:disabled {
+  cursor: default;
+  background: #69001F;
+  transform: none;
+}
+
+#reset:disabled {
+  cursor: default;
+  background: #69001F;
+  transform: none;
+}
+
+.finish {
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 100px;
+}
+
+.car__card {
+  margin: 20px 0 20px 0;
+}
+
+.car__card > div {
+  margin: 10px 0 10px 0;
+}
+
+button {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3s;
+  border: 0;
+  outline: 0;
+  background: #69001F;
+  margin: 0 10px 0 10px;
+}
+
+button:hover {
+  background: #9A2648;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.03);
+}
+
+#setting {
+  width: 400px;
+}
+
+.button__menu {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#garage__text {
+  color: white;
+}
+
+#previous__next {
+  margin-top: 50px;
+}
+
+footer {
+  height: 60px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > div {
+  position: relative;
+  left: 0;
+  top: -50px;
+  width: 105px;
+  height: 105px;
+  display: flex;
+  background-color: #69001F;
+  border-radius: 50%;
+}
+
+footer > div > a {
+  display: flex;
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+footer > div > a > img {
+  width: 80px;
+  margin-left: 3px;
+}
+
+.footer__git {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+#modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background: rgba(238, 228, 228, 0.82);
+}
+
+#modal {
+  margin: 150px auto 30px;
+  position: relative;
+  width: 460px;
+  background: white;
+  border-radius: 40px;
+  text-align: center;
+}
+
+#winners__previous__next {
+  margin-top: 30px;
+}
