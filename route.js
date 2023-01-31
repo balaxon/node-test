@@ -1,3 +1,3 @@
-const currentLocation = window.location.origin;
+const currentLocation = window.location.href;
 
-window.location.href = window.origin + '/node-test';
+window.location.href = 'https://balaxon.github.io/node-test/';
