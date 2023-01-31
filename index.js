@@ -1,1 +1,1 @@
-alert('error');
+console.log('index');
