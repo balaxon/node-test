@@ -26,7 +26,7 @@ if (url !== '') {
   alert('мы на главной');
 }
 
-switch (window.localStorage.setItem('href', window.location.href.replace(window.location.origin, ''))) {
+switch (url) {
   case '/node-test/shop':
     alert('вызываем shop');
     break;
