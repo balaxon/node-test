@@ -22,31 +22,34 @@ if (url !== '') {
   main.append(h1);
   document.body.append(main);
   window.localStorage.setItem('href', '');
-  
 } else {
   alert('мы на главной');
 }
 
-switch (url) {
-  case '/node-test/shop':
-    alert('вызываем shop');
-    break;
-
-    case '/node-test/single-game':
-      alert('вызываем single-game');
+window.addEventListener('popstate', () => {
+  switch (window.localStorage.setItem('href', window.location.href.replace(window.location.origin, ''))) {
+    case '/node-test/shop':
+      alert('вызываем shop');
       break;
-
-    case '/node-test/multi-game':
-      alert('вызываем multi-game');
+  
+      case '/node-test/single-game':
+        alert('вызываем single-game');
+        break;
+  
+      case '/node-test/multi-game':
+        alert('вызываем multi-game');
+        break;
+  
+      case '':
+        alert('вызываем main page');
+        break;
+  
+    default:
+      alert('вызываем 404 page');
       break;
+  }
+});
 
-    case '':
-      alert('вызываем main page');
-      break;
 
-  default:
-    alert('вызываем 404 page');
-    break;
-}
 
 console.log('index');
