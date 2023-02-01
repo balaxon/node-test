@@ -13,6 +13,10 @@ document.getElementsByTagName('ul')[0].children[3].addEventListener('click', () 
   history.pushState(null, null, '/node-test/multi-game');
 });
 
+window.onpopstate = () => {
+  alert('popstate');
+};
+
 if (url !== '') {
   console.log('tut');
   history.pushState(null, null, url);
