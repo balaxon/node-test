@@ -27,6 +27,10 @@ switch (url) {
       alert('вызываем multi-game');
       break;
 
+    case '/node-test/':
+      alert('вызываем main page');
+      break;
+
   default:
     alert('вызываем 404 page');
     break;
