@@ -28,6 +28,7 @@ switch (url) {
       break;
 
   default:
+    alert('вызываем 404 page');
     break;
 }
 
