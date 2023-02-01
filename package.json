@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "webpack --env development",
-    "dev": "webpack serve --env development",
+    "dev": "webpack serve --env development node route",
     "lint": "eslint src",
     "test": "jest",
     "prod": "webpack"

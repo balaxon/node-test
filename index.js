@@ -1,8 +1,8 @@
 
-if (window.localStorage.getItem('from404') === 'true') {
+if (window.localStorage.getItem('href') !== '') {
   console.log('tut');
-  window.localStorage.setItem('from404', 'false');
   history.pushState(null, null, window.localStorage.getItem('href'));
+  window.localStorage.setItem('href', '');
 } else {
   alert('мы на главной')
 }
