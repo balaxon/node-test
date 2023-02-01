@@ -1,5 +1,18 @@
 const url = window.localStorage.getItem('href');
 
+document.getElementsByTagName('ul')[0].children[0].addEventListener('click', () => {
+  history.pushState(null, null, '/node-test/');
+});
+document.getElementsByTagName('ul')[0].children[0].addEventListener('click', () => {
+  history.pushState(null, null, '/node-test/shop');
+});
+document.getElementsByTagName('ul')[0].children[0].addEventListener('click', () => {
+  history.pushState(null, null, '/node-test/single-game');
+});
+document.getElementsByTagName('ul')[0].children[0].addEventListener('click', () => {
+  history.pushState(null, null, '/node-test/multi-game');
+});
+
 if (url !== '') {
   console.log('tut');
   history.pushState(null, null, url);
@@ -27,7 +40,7 @@ switch (url) {
       alert('вызываем multi-game');
       break;
 
-    case '/node-test/':
+    case '':
       alert('вызываем main page');
       break;
 
