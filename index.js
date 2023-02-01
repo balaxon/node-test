@@ -1,16 +1,16 @@
 const url = window.localStorage.getItem('href');
 
 document.getElementsByTagName('ul')[0].children[0].addEventListener('click', () => {
-  history.pushState(null, null, '/node-test/');
+  window.location.href = 'https://balaxon.github.io/node-test/';
 });
 document.getElementsByTagName('ul')[0].children[1].addEventListener('click', () => {
-  history.pushState(null, null, '/node-test/shop');
+  window.location.href = 'https://balaxon.github.io/node-test/shop';
 });
 document.getElementsByTagName('ul')[0].children[2].addEventListener('click', () => {
-  history.pushState(null, null, '/node-test/single-game');
+  window.location.href = 'https://balaxon.github.io/node-test/single-game';
 });
 document.getElementsByTagName('ul')[0].children[3].addEventListener('click', () => {
-  history.pushState(null, null, '/node-test/multi-game');
+  window.location.href = 'https://balaxon.github.io/node-test/multi-game';
 });
 
 window.onpopstate = () => {
